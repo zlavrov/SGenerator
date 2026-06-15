@@ -1,6 +1,0 @@
----
-deployment:
-    tasks:
-        - export DEPLOYPATH=/home3/sgenerat/public_html/
-        - /bin/cp -R folder $DEPLOYPATH
-        - /bin/cp file.name $DEPLOYPATH
