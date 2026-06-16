@@ -1,3 +1,3 @@
 <?php
-header("Location: https://sgenerator.space/public/index.php");
-?>
+
+echo "the end";
