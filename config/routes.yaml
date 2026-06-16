@@ -1,0 +1,10 @@
+controllers:
+    resource:
+        path: ../src/Controller/v1
+        namespace: App\Controller\v1
+    type: attribute
+    prefix: '/api/v1'
+
+app_home:
+    resource: ../src/Controller/PageController.php
+    type: attribute
