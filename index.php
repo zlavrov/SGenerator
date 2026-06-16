@@ -1,3 +1,3 @@
 <?php
 
-echo "the end";
+echo "the end.";
