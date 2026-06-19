@@ -16,18 +16,50 @@ final class PageController extends AbstractController
         ]);
     }
 
-    #[Route('/contact', name: 'app_contact')]
-    public function contact(): Response
+    #[Route('/base/random-digits', name: 'base_random_digits')]
+    public function baseRandomDigits(): Response
     {
-        return $this->render('contact/index.html.twig', [
+        return $this->render('base/random_digits.html.twig', [
             'controller_name' => 'ContactController',
         ]);
     }
 
-    #[Route('/about-us', name: 'app_about_us')]
-    public function index(): Response
+    #[Route('/base/number-between', name: 'base_number_between')]
+    public function baseNumberBetween(): Response
     {
-        return $this->render('about_us/index.html.twig', [
+        return $this->render('base/number_between.html.twig', [
+            'controller_name' => 'AboutUsController',
+        ]);
+    }
+
+    #[Route('/base/random-number', name: 'base_random_number')]
+    public function baseRandomNumber(): Response
+    {
+        return $this->render('base/random_number.html.twig', [
+            'controller_name' => 'ContactController',
+        ]);
+    }
+
+    #[Route('/base/random-float', name: 'base_random_float')]
+    public function baseRandomFloat(): Response
+    {
+        return $this->render('base/random_float.html.twig', [
+            'controller_name' => 'AboutUsController',
+        ]);
+    }
+
+    #[Route('/address/coordinates', name: 'address_coordinates')]
+    public function addressCoordinates(): Response
+    {
+        return $this->render('address/coordinates.html.twig', [
+            'controller_name' => 'ContactController',
+        ]);
+    }
+
+    #[Route('/address/address', name: 'address_address')]
+    public function addressAddress(): Response
+    {
+        return $this->render('address/address.html.twig', [
             'controller_name' => 'AboutUsController',
         ]);
     }
